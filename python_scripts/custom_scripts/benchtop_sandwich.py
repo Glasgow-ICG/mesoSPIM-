@@ -5,7 +5,11 @@ mesoSPIM configuration file.
 
 Use this file as a starting point to set up all mesoSPIM hardware by replacing the 'Demo' designations
 with real hardware one-by-one. Make sure to rename your new configuration file to a different filename
-(The extension has to be .py).
+(The extension has to be .py). This script as shown here presents all settings and modifications to original script utilized in 
+the acquisition of oblique scanned images using the benctop upraded ver5 mesoSPIM microscope.
+
+Original Code by Dr. Nikita Vladamirov
+Modifiactions by Dr. Sharika Mohanan, Mr. Steven Milan Moreno
 '''
 
 '''
@@ -55,7 +59,7 @@ acquisition_hardware = {'master_trigger_out_line' : 'PXI6259/port0/line0',
                         'laser_task_line' :  'PXI6733/ao0:3',
                         'laser_task_trigger_source' : '/PXI6259/PFI0'}
 
-sidepanel = 'Demo' #'Demo' or 'FarmSimulator', deprecated
+sidepanel = 'Demo' #'Demo' or 'FarmSimulator', device was not installed during acquitision. Reactivate if connected.
 
 '''
 Digital laser enable lines
@@ -99,7 +103,7 @@ shutterdict = {'shutter_left' : 'PXI6259/port0/line8', # left (general) shutter
 Camera configuration
 
 camera = 'DemoCamera' # 'DemoCamera' or 'HamamatsuOrca' or 'Photometrics'
-
+# Teledyne Photometrics Kinetix sCMOS camera utilize, adjust accordingly to camera in setup.
 
 '''
 
@@ -111,7 +115,7 @@ camera_parameters = {'x_pixels' : 3200,
                      'y_pixel_size_in_microns' : 6.5,
                      'subsampling' : [1,2,4],
                      'speed_table_index': 0,
-                     'exp_mode' : 'Edge Trigger', # Lots of options in PyVCAM --> see constants.py
+                     'exp_mode' : 'Edge Trigger', # Lots of options in PyVCAM --> see constants.py at https://github.com/Photometrics/PyVCAM
                      'readout_port': 2,
                      'gain_index': 1,
                      'exp_out_mode': 4, # 4: line out
