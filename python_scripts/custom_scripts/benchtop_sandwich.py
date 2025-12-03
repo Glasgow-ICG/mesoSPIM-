@@ -144,7 +144,10 @@ ASI stages, 'stage_type' : 'TigerASI', 'MS2000ASI'
 PI stages, 'stage_type' : 'PI' or 'PI_1controllerNstages' (equivalent), 'PI_NcontrollersNstages'
 Mixed stages, 'stage_type' : 'PI_rot_and_Galil_xyzf', 'GalilStage', 'PI_f_rot_and_Galil_xyz', 'PI_rotz_and_Galil_xyf', 'PI_rotzf_and_Galil_xy',
 '''
-
+#stage_parameters were heavily modified for the custom cuvettes and mounts used during 
+obliuqe imaging experimentation
+#values for this parameter will vary in each mesoSPIM system so check all values before use and
+edit accoringly to avoid stage/cuvette collisions or system errors.
 stage_parameters = {'stage_type' : 'PI_1controllerNstages', # one of 'DemoStage', , 'PI_NcontrollersNstages', 'TigerASI', etc, see above
                     'startfocus': 20000,
                     'y_load_position': 90000,
