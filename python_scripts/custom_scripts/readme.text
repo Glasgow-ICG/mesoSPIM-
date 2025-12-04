@@ -1,1 +1,30 @@
+Alterations to code and locations in the library for the implementation of the oblique scanning process:
 
+-Acquisition logic (implements the x-shift for oblique scans)
+File: python_scripts/custom_scripts/mesoSPIMcontrol_benchtop_obliquescan/mesoSPIM/src/mesoSPIM_Core.py
+Link: https://github.com/Glasgow-ICG/mesoSPIM-/blob/main/python_scripts/custom_scripts/mesoSPIMcontrol_benchtop_obliquescan/mesoSPIM/src/mesoSPIM_Core.py
+  What to look for: inside the image-acquisition loop the code checks state['scanning_oblique_m45'], state['scanning_oblique_p45'], and state['scanning_normal']. 
+  For the oblique modes it reads z-step values (z_stepping, z_starting, z_ending) and sets move_dict['x_rel'] to +/- abs(z_stepping) depending on scan direction; 
+  normal scan clears x_rel.
+
+-State flags that control oblique scanning
+File: python_scripts/custom_scripts/mesoSPIMcontrol_benchtop_obliquescan/mesoSPIM/src/mesoSPIM_State.py
+Link: https://github.com/Glasgow-ICG/mesoSPIM-/blob/main/python_scripts/custom_scripts/mesoSPIMcontrol_benchtop_obliquescan/mesoSPIM/src/mesoSPIM_State.py
+  What to look for: state keys scanning_oblique_p45, scanning_oblique_m45, scanning_normal and their default values in the state dictionary.
+
+-GUI controls that toggle oblique scanning
+File: python_scripts/custom_scripts/mesoSPIMcontrol_benchtop_obliquescan/mesoSPIM/src/mesoSPIM_MainWindow.py
+Link: https://github.com/Glasgow-ICG/mesoSPIM-/blob/main/python_scripts/custom_scripts/mesoSPIMcontrol_benchtop_obliquescan/mesoSPIM/src/mesoSPIM_MainWindow.py
+UI file (radio buttons): python_scripts/.../mesoSPIM/gui/mesoSPIM_MainWindow.ui
+UI link: https://github.com/Glasgow-ICG/mesoSPIM-/blob/main/python_scripts/custom_scripts/mesoSPIMcontrol_benchtop_obliquescan/mesoSPIM/gui/mesoSPIM_MainWindow.ui
+  What to look for: radio buttons named p45deg, m45deg, NormScan wired to oblique_scan_check which sets the state flags.
+
+-Image metadata and logging of oblique scan mode
+File: python_scripts/custom_scripts/mesoSPIMcontrol_benchtop_obliquescan/mesoSPIM/src/mesoSPIM_ImageWriter.py
+Link: https://github.com/Glasgow-ICG/mesoSPIM-/blob/main/python_scripts/custom_scripts/mesoSPIMcontrol_benchtop_obliquescan/mesoSPIM/src/mesoSPIM_ImageWriter.py
+  What to look for: written metadata includes the +45 / -45 flags so saved images record the selected scan mode.
+
+Repo readme note about oblique scanning
+File: python_scripts/readme.text
+Link: https://github.com/Glasgow-ICG/mesoSPIM-/blob/main/python_scripts/readme.text
+Note: mentions that custom_scripts contains code used for oblique scanning.
