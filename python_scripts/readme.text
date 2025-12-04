@@ -4,5 +4,5 @@ This folder contains python code utilized in the acquisition of data using obliq
 The original general user interface scripts were provided alongside the designs and operational instructions of the open source mesoSPIM microscope
 
 Modified scripts will be found in the subfolder custom_scripts
-Original operation and system check scripts written by Dr. Nikita Vladamirov are found in the debug_scripts subfolder. 
+Original scripts which were modified here are by Dr. Nikita Vladamirov and are available on . 
 
