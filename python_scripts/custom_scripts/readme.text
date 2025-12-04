@@ -17,7 +17,7 @@ File: python_scripts/custom_scripts/mesoSPIMcontrol_benchtop_obliquescan/mesoSPI
 Link: https://github.com/Glasgow-ICG/mesoSPIM-/blob/main/python_scripts/custom_scripts/mesoSPIMcontrol_benchtop_obliquescan/mesoSPIM/src/mesoSPIM_MainWindow.py
 UI file (radio buttons): python_scripts/.../mesoSPIM/gui/mesoSPIM_MainWindow.ui
 UI link: https://github.com/Glasgow-ICG/mesoSPIM-/blob/main/python_scripts/custom_scripts/mesoSPIMcontrol_benchtop_obliquescan/mesoSPIM/gui/mesoSPIM_MainWindow.ui
-  What to look for: radio buttons named p45deg, m45deg, NormScan wired to oblique_scan_check which sets the state flags.
+  What to look for: User interface main window radio buttons named p45deg, m45deg, NormScan wired to oblique_scan_check which sets the state flags.
 
 -Image metadata and logging of oblique scan mode
 File: python_scripts/custom_scripts/mesoSPIMcontrol_benchtop_obliquescan/mesoSPIM/src/mesoSPIM_ImageWriter.py
