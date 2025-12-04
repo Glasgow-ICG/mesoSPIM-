@@ -24,7 +24,3 @@ File: python_scripts/custom_scripts/mesoSPIMcontrol_benchtop_obliquescan/mesoSPI
 Link: https://github.com/Glasgow-ICG/mesoSPIM-/blob/main/python_scripts/custom_scripts/mesoSPIMcontrol_benchtop_obliquescan/mesoSPIM/src/mesoSPIM_ImageWriter.py
   What to look for: written metadata includes the +45 / -45 flags so saved images record the selected scan mode.
 
-Repo readme note about oblique scanning
-File: python_scripts/readme.text
-Link: https://github.com/Glasgow-ICG/mesoSPIM-/blob/main/python_scripts/readme.text
-Note: mentions that custom_scripts contains code used for oblique scanning.
