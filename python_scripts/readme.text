@@ -1,10 +1,16 @@
 Important Information:
 
-custom_scripts folder contains python code library utilized in the acquisition of data using oblique scanning techniques. All files and folders in the python library are 
+-custom_scripts- 
+
+This folder contains python code library utilized in the acquisition of data using oblique scanning techniques. All files and folders in the python library are 
 required for the operation of the mesoSPIM ver 5 benctop upgraded system used in the publication. Modification will be required to accomidate changes in hardware 
 (camera, stages, filter wheel, objectve turret, electronically tuneable lenses, and galvonmeter mirrors). Windows 10 operating system used, Linux and iOS operation 
 not attempted.
 
-Original scripts which were modified here are by Dr. Nikita Vladamirov and are available on https://github.com/mesoSPIM/mesoSPIM-control. 
-Modifications to script by Dr. Sharika Mohanan and Mr. Steven Milan Moreno
+Original mesoSPIM control python library scripts by Dr. Nikita Vladamirov, original code available on https://github.com/mesoSPIM/mesoSPIM-control. 
+Modifications to these scripts provided here are by Dr. Sharika Mohanan and Mr. Steven Milan Moreno
 
+-analysis_scripts-
+
+This folder contains pythons code used in analysis of images acquired in the publication. Comments within the script detail the processes utilized
+Written by Mr. Ahmed Elnageh
