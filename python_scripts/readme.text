@@ -12,5 +12,7 @@ Modifications to these scripts provided here are by Dr. Sharika Mohanan and Mr. 
 
 -analysis_scripts-
 
-This folder contains pythons code used in analysis of images acquired in the publication. Comments within the script detail the processes utilized
+This folder contains pythons code used in FWHM analysis of images acquired with the mesoSPIM ver 5 benctop ugraded microscope and presented in the publication. 
+Comments within the script detail the step by step process performed by the script with descriptive variable names used. 
+
 Written by Mr. Ahmed Elnageh
